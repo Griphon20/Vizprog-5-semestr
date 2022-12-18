@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>help</class>
+ <widget class="QWidget" name="help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>732</width>
+    <height>489</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*
+{
+  color: rgb(0, 0, 0);
+  font-family:  &quot;Segoe UI&quot;;
+	   font-size: 14px;
+	   font-weight: 500;
+	   }
+
+	   QWidget {
+	   background-color: rgb(255,255,255);
+	   }
+
+	   QTextEdit{
+	   border-radius: 5px;
+	   background-color: rgb(205,205,205);
+	   }
+
+	   QPlainTextEdit{
+	   border-radius: 5px;
+	   background-color: rgb(205,205,205);
+	   }
+
+	   QLineEdit{
+	   border-radius: 5px;
+	   background-color: rgb(205,205,205);
+	   }
+
+	   QPushButton{
+	   background-color: rgb(0, 214, 120);
+	   }</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <widget class="QPushButton" name="pushButtonRules">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Цель игры</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="pushButtonAbout">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>О программе</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="pushButtonGoal">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Правила</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" rowspan="6" colspan="2">
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="source">
+      <url>
+       <string>qrc:/media/about.txt</string>
+      </url>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Выход</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
